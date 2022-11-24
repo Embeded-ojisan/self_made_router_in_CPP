@@ -36,6 +36,10 @@ int InitRawSocket(char *device, int promiscFlag, in ipOnly)
             }
         }
     }
+
+    memset(&ifreq, 0, sizeof(struct ifreq));
+
+    
 }
 
 int main(int argc, char *argv[])
